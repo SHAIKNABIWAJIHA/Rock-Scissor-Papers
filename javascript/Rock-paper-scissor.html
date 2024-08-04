@@ -15,7 +15,6 @@
       background-position: center;
       background-repeat: no-repeat;
     }
-
     .container {
       text-align: center;
       background-color:violet; 
@@ -23,7 +22,6 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
     button {
       font-size: 16px;
       padding: 10px 20px;
@@ -39,13 +37,10 @@
     <button onclick="playGame('paper');">Paper</button>
     <button onclick="playGame('scissors');">Scissors</button>
   </div>
-
-  <script>
+ <script>
     function playGame(playerMove) {
       const computerMove = pickComputerMove();
-
       let result = '';
-
       if (playerMove === 'scissors') {
         if (computerMove === 'rock') {
           result = 'You lose.';
@@ -87,7 +82,6 @@
       } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
         computerMove = 'scissors';
       }
-
       return computerMove;
     }
   </script>
